@@ -17,10 +17,6 @@ def send_notification(amount, time_slot):
 
 # Schedule water intake notifications covering the entire day (converted to 24-hour format)
 time_slots = {
-    "00:00": 100,
-    "01:00": 100,
-    "02:00": 100,
-    "03:00": 100,
     "04:00": 200,
     "05:00": 200,
     "06:00": 250,
@@ -39,7 +35,7 @@ time_slots = {
     "19:00": 200,
     "20:00": 150,
     "21:00": 150,
-    "23:00": 100,  # Less water intake at night
+    "22:00": 100,  # Less water intake at night
 }
 
 # Schedule the notifications for each time slot
